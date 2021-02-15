@@ -2,20 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +13,93 @@
   color: white;
 }
 
+.app-info p {
+  font-size: calc(10px + 1vmin);
+  margin: 0px;
+}
+
+.app-info {
+  margin-bottom: 1.5em;
+  color: #b1b1b1;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.name-finder-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15px;
+  min-width: 330px;
+  margin: auto;
+}
+.search-form input {
+  min-width: 250px;
+}
+.search-form input:focus {
+  outline: none;
+  border: 2px solid #5d626f;
+  border-radius: 3px;
+}
+.loading-indicator {
+  padding-top: 30px;
+}
+.user-details, .name-finder-history-container {
+	display: flex;
+  flex-direction: column;
+  border: 5px solid #5d626f;
+  margin: auto;
+  min-width: 300px;
+  padding: 15px 10px 17px 10px;
+  margin-top: 20px;
+  background-color: #efefef;
+}
+.user-details div{
+	display: flex;
+}
+.user-pre-info div {
+  padding-right: 15px;
+}
+.user-pre-info, .user-email {
+  padding-top: 5px;
+}
+.user-pre-info, .user-main-info {
+  flex-direction: row;
+}
+.user-name {
+  font-weight: 700;
+  padding-right: 15px;
+}
+.history h3 {
+  margin-bottom: 0px;
+  margin-top: 5px; 
+}
+.guide {
+  margin-top: 0px;
+  font-weight: 700;
+}
+.history-item {
+  cursor: pointer;
+}
+.history-item:hover {
+  font-weight: 500;
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #d65b5b;
+  margin: auto;
+  min-width: 300px;
+  padding: 15px 10px 17px 10px;
+  margin-top: 20px;
+  background-color: #ffd3d3;
 }
 
 @keyframes App-logo-spin {
